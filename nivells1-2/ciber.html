@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7 N1-N2</title>
+    <script src="ciber.js"></script>
+</head>
+
+<body>
+    <h1>M7 - JavaScript Basic</h1><br>
+    <h1>Nivell 1</h1>
+    <h3>Exercicis 1, 3, 4 i 6 mostrats per consola</h3>
+    <h3>Exercici 2</h3>
+    <div class="div-btn-cen">
+        <input type="button" onclick="exercici2()" value="Mostra l'exercici 2 per alert" /><br>
+    </div>
+    <h3>Exercici 5</h3>
+    <div class="div-btn-cen">
+        <input type="button" onclick="exercici5()" value="Mostra l'exercici 5 per alert" /><br>
+    </div>
+    <h3>Exercici 7</h3>
+    <div class="div-btn-cen">
+        <input type="button" onclick="objectesLlistats()" value="Mostra els objectes llistats" /><br>
+        <p id="llistaObjectes"></p>
+    </div>
+    <h3>Exercici 8</h3>
+    <div class="div-btn-cen">
+        Introdueix el primer nombre: <input type="text" id="val1"><br><br>Introdueix el segon nombre: <input type="text" id="val2"><br><br>Introdueix l'operador (caràcters vàlids: + - *): <input type="text" id="operador"><br><br>
+        <input type="button" onclick="calculadora()" value="Calcular"><br/>
+        <p id="resultat"></p>
+    </div>
+    <br>
+    <h1>Nivell 2</h1>
+    <div id="nivell2">
+        <form>
+            <p>Introdueix un nombre: <input type="text" id="valor1N2"></p>
+            <p>Introdueix un altre nombre: <input type="text" id="valor2N2"></p>
+            <p>Selecciona l'operador:</p>
+            <select id="operadorN2">
+                <option value="sum">Suma</option>
+                <option value="res">Resta</option>
+                <option value="mul">Multiplicació</option>
+                <option value="div">Divisió</option>
+            </select>
+            <button type="button" onclick="calcN2()">Calcula</button>
+        </form>
+        <p>El resultat és:</p>
+        <p id="resultatN2"></p>
+    </div>
+    <br>
+</body>
+
+<style>
+    h1,
+    h3,
+    .div-btn-cen,
+    #nivell2 {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+</style>
+
+</html>
