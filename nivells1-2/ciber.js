@@ -54,27 +54,18 @@
     }
 
     //Exercici 8
-    function calculadora(valor1, valor2, operador) {
-        var valor1 = parseInt(document.getElementById("val1").value);
-        var valor2 = parseInt(document.getElementById("val2").value);
-        var operador = document.getElementById("operador").value;
-
-        var resultat8;
-        switch (operador) {
-            case "+":
-                resultat8 = valor1 + valor2;
-                break;
-            case "-":
-                resultat8 = valor1 - valor2;
-                break;
-            case "*":
-                resultat8 = valor1 * valor2;
-                break;
-            default:
-                resultat8 = "NO VÀLID";
-                break;
+    function exercici8() {
+        function calculadora(operador, valor1, valor2) {
+            if (operador == 'suma') {
+                document.getElementById("resultat").innerHTML = valor1 + valor2;
+            } else if (operador == 'resta') {
+                document.getElementById("resultat").innerHTML = valor1 - valor2;
+            } else if (operador == 'multiplicació') {
+                document.getElementById("resultat").innerHTML = valor1 * valor2;
+            }
         }
-        document.getElementById("resultat").innerHTML = valor1 + " " + operador + " " + valor2 + " = " + resultat8;
+
+        var resultat = calculadora('resta', 40, 20);
     }
 
     //Nivell 2
