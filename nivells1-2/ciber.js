@@ -70,20 +70,28 @@
 
     //Nivell 2
     function calcN2() {
-        var a = parseInt(document.querySelector("#valor1N2").value);
-        var b = parseInt(document.querySelector("#valor2N2").value);
-        var op = document.querySelector("#operadorN2").value;
-        var calcularN2;
-
-        if (op == "sum") {
-            calcularN2 = a + b;
-        } else if (op == "res") {
-            calcularN2 = a - b;
-        } else if (op == "mul") {
-            calcularN2 = a * b;
-        } else if (op == "div") {
-            calcularN2 = a / b;
+        function calculadora(operador, valor1, valor2) {
+            if (operador == 'suma') {
+                var suma = valor1 + valor2;
+                document.getElementById("resultat1").innerHTML = suma;
+                console.log(suma);
+            } else if (operador == 'resta') {
+                var resta = valor1 - valor2;
+                document.getElementById("resultat2").innerHTML = resta;
+                console.log(resta);
+            } else if (operador == 'multiplicació') {
+                var multiplicació = valor1 * valor2;
+                document.getElementById("resultat3").innerHTML = multiplicació;
+                console.log(multiplicació);
+            } else if (operador == 'divisió') {
+                var divisió = valor1 / valor2;
+                document.getElementById("resultat4").innerHTML = divisió;
+                console.log(divisió);
+            }
         }
 
-        document.querySelector("#resultatN2").innerHTML = calcularN2;
+        var resultat = calculadora('suma', 40, 20);
+        var resultat = calculadora('resta', 40, 20);
+        var resultat = calculadora('multiplicació', 40, 20);
+        var resultat = calculadora('divisió', 40, 20);
     }
