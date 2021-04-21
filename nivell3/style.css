@@ -1,0 +1,121 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "San Francisco Display Thin", Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+@font-face {
+    font-family: "San Francisco";
+    /* font-weight: 300; */
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@font-face {
+    font-family: "San Francisco Display Thin";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.svg#San Francisco Display Thin") format("svg")
+}
+
+html,
+body {
+    background-color: #2a2a2a;
+    /* prevención de seleccionar texto de la calculadora por el usuario */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.clock {
+    color: #fff;
+    text-align: center;
+    cursor: default;
+}
+
+table,
+td {
+    border: none;
+}
+
+#container {
+    width: 320px;
+    margin: 120px auto;
+    background-color: black;
+    border: 10px solid black;
+    border-radius: 30px;
+}
+
+#pantalla {
+    height: 180px;
+    font-size: 70px;
+    font-weight: 200;
+    vertical-align: bottom;
+    text-align: right;
+    padding-right: 16px;
+    color: white;
+    border: none;
+    padding-bottom: 6px;
+    cursor: default;
+}
+
+.botones-digitos {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+    font-weight: 300;
+    background-color: #424242;
+    color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 18px 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.botones-operador {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+    font-weight: 300;
+    background-color: #FDAD45;
+    color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 18px 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.boton-AC {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+    font-weight: 300;
+    background-color: #B4B5B5;
+    color: #000;
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 18px 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.boton-decimal {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+    font-weight: 300;
+    background-color: #424242;
+    color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 18px 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
